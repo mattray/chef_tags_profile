@@ -1,10 +1,10 @@
 name: chef_tag
-title: InSpec Profile
-maintainer: The Authors
-copyright: The Authors
-copyright_email: you@example.com
+title: Chef tag check
+maintainer: Matt Ray
+copyright: Matt Ray
+copyright_email: matt@chef.io
 license: Apache-2.0
-summary: An InSpec Compliance Profile
+summary: Check if the Chef tag is green or brown (success) or missing (failure)
 version: 0.1.0
 supports:
   platform: os

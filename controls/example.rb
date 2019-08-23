@@ -1,7 +1,7 @@
 title "check Chef tags"
 
 # Chef node name as an input
-nodename = input('nodename', value: `hostname`.split('.')[0])
+nodename = input('nodename', value: `hostname`.split('.')[0].strip)
 
 # you add controls here
 control "Check Chef tags" do

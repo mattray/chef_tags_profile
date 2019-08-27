@@ -2,8 +2,12 @@ title "check Chef tags"
 
 # Chef node name as an input
 # nodename = attribute('nodename', default: `hostname`.split('.')[0].strip)
-name = attribute('nodename', description: 'The chef environment for the node', default: 'dev')
+# name = attribute('nodename', description: 'The chef environment for the node', default: 'dev')
 # name = input('nodename')
+
+chef_node = attribute('chef_node', description: 'Chef Node')
+
+name = chef_node['config']['node_name']
 
 # you add controls here
 control "Check Chef tags" do

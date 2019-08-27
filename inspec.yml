@@ -8,6 +8,3 @@ summary: Check if the Chef tag is green or brown (success) or missing (failure)
 version: 0.1.0
 supports:
   platform: os
-
-attributes:
-- name: nodename
